@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			font: normal 20pt Arial;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		// Exibir mensagem através de uma janela "pop-up"
+		window.alert("Minha primeira mensagem!")
+		// Exibir janela com opções de ok e
+		window.confirm("Está gostando de JavaScript?")
+		// Exibir janela com espaço para inserir input
+		var nome = window.prompt("Qual seu nome? ")
+		// Concatenação de "texto1", var, "texto2"
+		// utilizando operador "+"
+		window.alert("É um prazer te conhecer, " + nome + "!")
+		// Usando método de string para exibir o numero de caracteres
+		document.write(`Olá, ${nome}! Seu nome tem ${nome.length} caracteres.<br/>`)
+		// Usando método de string (nome)para mostrar caractéres maiúscilos
+		document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)
+		// Usando método de string para mostrar caractéres minúsculos
+		document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br/>`)
+		// Método para n1 ser um inteiro, mesmo que o número digitado seja não inteiro
+		var n1 = Number.parseInt(window.prompt("Digite um número: "))
+		// Converter str em num , sendo inteiro ou não
+        var n2 = Number(window.prompt("Digite outro número: "))
+        var sum = n1 + n2
+		// Método para mostrar duas casa decimais
+		sum = sum.toFixed(2)
+        window.alert(`A soma dos valores ${n1} e ${n2} é: ${sum}`)
+	</script>
+</body>
+</html>
