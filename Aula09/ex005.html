@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Primeiros passos DOM</title>
+	<style>
+		body {
+			background:rgb(107, 185, 179);
+			font: normal 18pt Arial;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Iniciando estudos com DOM</h1>
+	<p>Aqui vai o resultado</p>
+	<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+	<div id="msg">clique em mim</div>
+	<div class="teste">clique em mim2</div>
+	<script>
+	
+		
+		window.document.write("<br>------  Selecionando por Marca -------<br>")
+		
+		//Atribui o primeiro elemento com a tag <p>. Selecionando por TagName
+		var p1 = window.document.getElementsByTagName('p')[0]
+		p1.style.color = 'red'
+		window.document.write(p1.innerText + "<br>")
+		
+		//Atribui todo o corpo da página
+		var corpo = window.document.body
+		corpo.style.background = 'gray'
+		
+		window.document.write("<br><br>------  Selecionando por ID-------<br>")
+		
+		//atribui o elemento com id="msg". Selecionando ById
+		var d = window.document.getElementById("msg")
+		d.style.color = 'green'
+		
+		window.document.write("<br><br>------  Selecionando por SELETOR -------<br>")
+		
+		//Atribui através do seletor elemento com a tag <div> e id="msg"
+		var seletor = window.document.querySelector('div#msg')
+		
+		//Atribui através do seletor elemento com a tag <div> e class="teste"
+		var seletor = window.document.querySelector('div.teste')
+		seletor.style.background = 'orange'
+
+	</script>
+</body>
+</html>
