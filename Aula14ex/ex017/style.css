@@ -22,3 +22,11 @@ footer {
 	text-align: center;
 	font-style: italic;
 }
+
+input#button {
+	background: rgb(101, 116, 184);
+	border: none;
+	border-radius: 2px;
+	color: white;
+	height: 21px
+}
